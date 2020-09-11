@@ -1,0 +1,18 @@
+@import '../../utilities/variables.scss';
+
+.containerPaises {
+    background-color: $yellow-color;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__logo {
+        width: 400px;
+    }
+
+    &__listaPaises {
+        display: flex;
+        flex-direction: column;
+    }
+}

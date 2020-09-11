@@ -1,0 +1,66 @@
+@import '../../utilities//variables.scss';
+
+.navBarContainer {
+    background-color: $yellow-color;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    &__logo {
+        width: 150px;
+        position: absolute;
+    left: 40px;
+    }
+
+    &__compraAhora {
+        width: 350px;
+        position: absolute;
+        right: 30px;
+    }
+    
+    &__searchContainer{
+        position: relative;
+        width: 45%;
+    }
+
+    &__input {
+        height: 35px;
+        width: 100%;
+        border: none;
+        border-radius: 5px;
+        outline: none;
+        padding-left: 10px;
+        font-size: 20px;
+        font-weight: 400;
+        &:focus {
+            // border: 2px solid black;
+        }
+    }
+
+    &__searchButton {
+        background-color: transparent;
+        border: none;
+        position: absolute;
+        right: 0;
+        top: 1px;
+        border-left: 1px solid #dedddd;
+        height: 90%;
+        cursor: pointer;
+    }
+}
+
+
+@media(max-width: 720px) {
+    .navBarContainer {
+        &__logo {
+            display: none;
+        }
+        
+        &__searchContainer{
+            width: 80%;
+        }
+    
+    }
+}
