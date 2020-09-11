@@ -4,7 +4,7 @@ import Footer from '../../components/Footer/Footer'
 import ProductItem from '../../components/ProductItem/ProductItem'
 import './Home.scss'
 
-export default function Home() {
+export default function Home(props) {
 
     const [productList, setProductList ] = useState([])
     const [filteredList, setFilteredList ] = useState([])
@@ -13,8 +13,10 @@ export default function Home() {
         fetchProducts()
     }, [])
 
+    let countryID = props.match.params.id;
+
     const fetchProducts = async() => {
-        let data = await fetch('https://api.mercadolibre.com/sites/MLA/search?q=buzo');
+        let data = await fetch(`https://api.mercadolibre.com/sites/${countryID}/search?q=auriculares`);
         let jsonData = await data.json();
         setProductList(jsonData.results)
         let item = jsonData.results.map(item => <ProductItem key={item.id} itemId={item.id} cuotas={item.installments} nombre={item.title} precio={item.price} imgUrl={item.thumbnail} />)
