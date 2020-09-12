@@ -14,7 +14,7 @@ import Product from './pages/Product/Product'
 
 ReactDOM.render(
   <Router>
-    <Route exact path="/"  component={Paises} />
+    <Route exact path="/clon-meli/"  component={Paises} />
     <Route exact path="/home/:id"  component={Home} />
     <Route exact path="/product/:id"  component={Product} />
   </Router>,
