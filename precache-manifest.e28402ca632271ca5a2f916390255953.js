@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7ff526800b170f823304014bd3fa8933",
+    "revision": "0122ba207af283903be9dde151b72cbf",
     "url": "/clon-meli/index.html"
   },
   {
-    "revision": "9d455398afedf22552ca",
+    "revision": "986a35022ab2c3ea28d0",
     "url": "/clon-meli/static/css/main.b423c4d3.chunk.css"
   },
   {
-    "revision": "1bc786513b348c22155e",
-    "url": "/clon-meli/static/js/2.4be00be0.chunk.js"
+    "revision": "81fd71b58652d2ed0606",
+    "url": "/clon-meli/static/js/2.b40f84a4.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/clon-meli/static/js/2.4be00be0.chunk.js.LICENSE.txt"
+    "url": "/clon-meli/static/js/2.b40f84a4.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "9d455398afedf22552ca",
-    "url": "/clon-meli/static/js/main.9198edb0.chunk.js"
+    "revision": "986a35022ab2c3ea28d0",
+    "url": "/clon-meli/static/js/main.7ecf9f38.chunk.js"
   },
   {
     "revision": "35702bab9857db1b0141",
