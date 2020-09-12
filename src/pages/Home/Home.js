@@ -1,11 +1,12 @@
 import React, {useEffect, useState} from 'react'
+import {useParams} from 'react-router-dom'
 import NavBar from '../../components/NavBar/NavBar'
 import Footer from '../../components/Footer/Footer'
 import ProductItem from '../../components/ProductItem/ProductItem'
 import './Home.scss'
 
 export default function Home(props) {
-
+    const {id} = useParams()
     const [productList, setProductList ] = useState([])
     const [filteredList, setFilteredList ] = useState([])
 
@@ -13,7 +14,7 @@ export default function Home(props) {
         fetchProducts()
     }, [])
 
-    let countryID = props.match.params.id;
+    let countryID = id
 
     const fetchProducts = async() => {
         let data = await fetch(`https://api.mercadolibre.com/sites/${countryID}/search?q=auriculares`);

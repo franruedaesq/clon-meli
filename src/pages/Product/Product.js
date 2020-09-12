@@ -1,18 +1,19 @@
 import React, {useEffect, useState} from 'react'
+import {useParams } from 'react-router-dom'
 
 export default function Product(props) {
 
-    let  productId = props.match.params.id
-
+    const {id} = useParams()
     let [item, setItem] = useState({})
 
     useEffect(() => {
         fetchProduct();
     }, [])
 
-    console.log(props.match.params.id)
+    console.log(id)
+
     const fetchProduct = async() => {
-        let data = await fetch(`https://api.mercadolibre.com/items/${productId}`);
+        let data = await fetch(`https://api.mercadolibre.com/items/${id}`);
         let jsonData = await data.json();
         setItem(jsonData)
         console.log(jsonData)
