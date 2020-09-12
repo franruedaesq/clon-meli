@@ -1,0 +1,126 @@
+@import '../../utilities//variables.scss';
+
+.productInfo {
+    width: 350px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 30px;
+    box-sizing: border-box;
+    gap: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+
+    &__nuevo {
+        color: rgb(150, 150, 150);
+        font-size: 14px;
+        font-weight: 400;
+        vertical-align: 3px;
+        white-space: pre-wrap;
+    }
+
+
+    &__title {
+        color: rgba(0,0,0,.8);
+        font-size: 22px;
+        font-weight: 600;
+        padding-bottom: 8px;
+        line-height: 1.18;
+        padding-right: 10px;
+        word-break: break-word;
+    }
+
+    &__precio-anterior {
+        font-size: 20px;
+        color: rgba(0,0,0,.45);
+        text-decoration: line-through;
+    }
+
+    &__price {
+        font-size: 36px;
+        color: #000;
+        font-weight: 300;
+    }
+
+    &__envio-normalidad {
+        font-size: 14px;
+        padding: 6px 8px;
+        text-transform: none;
+        background-color: rgba(65,137,230,.1);
+        color: #3483fa;
+        font-weight: 600;
+        line-height: 1;
+        width: fit-content;
+    }
+
+    &__envio-gratis {
+        color: $green-color;
+        font-size: 16px;
+    margin-bottom: 2px;
+    line-height: 1.3;
+    display: flex;
+    }
+
+    &__camion {
+        margin: 0;
+        fill:$green-color;
+        margin-right: 10px;
+    }
+
+    &__full {
+        fill: $green-color;
+    position: relative;
+    top: 5px;
+    height: 16px;
+    width: 56px;
+    margin-top: -1px;
+    }
+
+    &__stock-disponible {
+        font-size: 16px;
+        color: rgba(0,0,0,.8);
+        font-weight: 600;
+    }
+
+    &__button {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 48px;
+        padding: 0 24px;
+        height: 48px;
+        text-align: center;
+        border-radius: 6px;
+        -webkit-transition: .18s ease-out;
+        transition: .18s ease-out;
+        display: inline-block;
+        width: auto;
+        -webkit-font-smoothing: antialiased;
+        cursor: pointer;
+        border: none;
+        outline: none;
+    }
+
+    &--blue {
+        background-color: #3483fa;
+        color: #fff;
+
+        &:hover{
+            background-color: #005ae0;
+        }
+    }
+
+    &--lightblue {
+        background-color: rgba(65,137,230,.15);
+        color: #3483fa;
+
+        &:hover {
+            background-color: rgba(2, 30, 66, 0.15);
+        }
+    }
+
+    &__caracteristicas {
+        color: grey;
+        font-size: 15px;
+    }
+}

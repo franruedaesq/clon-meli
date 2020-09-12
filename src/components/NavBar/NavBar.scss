@@ -4,14 +4,13 @@
     background-color: $yellow-color;
     height: 64px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     position: relative;
 
     &__logo {
         width: 150px;
-        position: absolute;
-    left: 40px;
+    
     }
 
     &__compraAhora {
@@ -21,8 +20,10 @@
     }
     
     &__searchContainer{
-        position: relative;
+        position: absolute;
         width: 45%;
+        left: 50%;
+        transform: translate(-50%, 0px);
     }
 
     &__input {
@@ -50,6 +51,7 @@
         cursor: pointer;
     }
 }
+
 
 
 @media(max-width: 720px) {
