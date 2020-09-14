@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "95b7f69f5ac8bf92a571bb17715ff190",
+    "revision": "dc0552e969321d0d82e62d2a9ffeb79f",
     "url": "/clon-meli/index.html"
   },
   {
-    "revision": "6b6caf14c9eefc56f95c",
-    "url": "/clon-meli/static/css/main.d53aadbc.chunk.css"
+    "revision": "691db09abe98d1bb9eb6",
+    "url": "/clon-meli/static/css/main.89c252e1.chunk.css"
   },
   {
-    "revision": "e4f9d192d55f29454701",
-    "url": "/clon-meli/static/js/2.01c0ea67.chunk.js"
+    "revision": "2584c1a7b67526c9f761",
+    "url": "/clon-meli/static/js/2.a09a24c4.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/clon-meli/static/js/2.01c0ea67.chunk.js.LICENSE.txt"
+    "url": "/clon-meli/static/js/2.a09a24c4.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "6b6caf14c9eefc56f95c",
-    "url": "/clon-meli/static/js/main.789ec422.chunk.js"
+    "revision": "691db09abe98d1bb9eb6",
+    "url": "/clon-meli/static/js/main.d4461a69.chunk.js"
   },
   {
     "revision": "35702bab9857db1b0141",
