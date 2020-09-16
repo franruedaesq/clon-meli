@@ -13,6 +13,7 @@
     width: 250px;
     height: 340px;
     font-family: 'Nunito', sans-serif;
+    position: relative;
 
 
 
@@ -20,10 +21,14 @@
         height: 380px;
     }
 
-    &:hover > &__moreInfo {
+    &:hover  &__moreInfo {
         // display: block;
         height: 20px;
         opacity: 1;
+    }
+
+    &__link {
+        text-decoration: none;
     }
 
     &__separation {
@@ -82,8 +87,8 @@
     &__moreInfo {
         // display: none;
         height: 0px;
-        transition: opacity .2s .2s, height .2s .2s;
         opacity: 0;
+        transition: all .2s .2s, height .2s .2s;
     }
 
     &_info {

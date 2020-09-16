@@ -1,11 +1,15 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import './ProductItem.scss'
+import FavouriteHeart from '../FavouriteHeart/FavouriteHeart'
 
-export default function ProductItem({precio, imgUrl, nombre, cuotas, itemId, shipping}) {
+export default function ProductItem({precio, imgUrl, nombre, cuotas, itemId, shipping, selectedAsFavourite, isFavourite}) {
+    
     return (
-        <Link to={`/product/${itemId}`}>
+        
         <div className="productItem">
+            <FavouriteHeart isFavourite={isFavourite} itemId={itemId} onFavouriteClic={() => selectedAsFavourite(itemId, nombre)} />
+            <Link className="productItem__link" to={`/product/${itemId}`}>
             <img className="productItem__img" src={imgUrl} alt=""/>
             <div className="productItem__separation">
                 <hr className="productItem__line"/>
@@ -20,7 +24,8 @@ export default function ProductItem({precio, imgUrl, nombre, cuotas, itemId, shi
             <div className="productItem__moreInfo">
                 <p className="productItem_info">{nombre}</p>
             </div>
+            </Link>
         </div>
-        </Link>
+        
     )
 }
