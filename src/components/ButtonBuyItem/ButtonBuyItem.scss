@@ -1,0 +1,27 @@
+.ButtonBuyItem {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 48px;
+    padding: 0 24px;
+    height: 48px;
+    text-align: center;
+    border-radius: 6px;
+    -webkit-transition: .18s ease-out;
+    transition: .18s ease-out;
+    display: inline-block;
+    width: auto;
+    -webkit-font-smoothing: antialiased;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    min-width: 200px;
+
+    &--blue {
+        background-color: #3483fa;
+        color: #fff;
+
+        &:hover{
+            background-color: #005ae0;
+        }
+    }
+}
