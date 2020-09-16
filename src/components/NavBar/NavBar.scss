@@ -7,10 +7,29 @@
     justify-content: space-between;
     align-items: center;
     position: relative;
+    overflow: hidden;
 
     &__logo {
         width: 150px;
     
+    }
+
+    &__iconContainer {
+        display: flex;
+        justify-content: space-between;
+        width: 10%;
+        margin-right: 2rem;
+    }
+
+    &__icon{
+        fill: transparent;
+        stroke: rgb(66, 66, 66);      
+        stroke-width: 1.5px;
+        cursor: pointer;
+    }
+
+    &__icon:hover {
+        stroke-width: 2.5px;
     }
 
     &__compraAhora {
