@@ -18,6 +18,7 @@
         font-weight: 400;
         vertical-align: 3px;
         white-space: pre-wrap;
+        position: relative;
     }
 
 
@@ -122,5 +123,12 @@
     &__caracteristicas {
         color: grey;
         font-size: 15px;
+    }
+
+    @media(max-width: 720px) {
+        .productInfo {
+            width: 90%;
+            margin:0 auto;
+        }
     }
 }
